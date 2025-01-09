@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body{
+  margin: 50px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+table thead td{
+  font-weight: 700;
+}
+table tbody td img{
+  max-width: 100%;
+  width: 150px;
+}
+table tbody td > i img{
+  max-width: 100%;
+  width: 20px;
+}
+table tbody td > i{
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 15px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+table tbody td:last-child{
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+.adduser{
+  display: flex;
+  justify-content: flex-end;
+}
+.adduser span{
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.adduser span i img{
+  width: 20px;
+  margin-left: 4px;
+}
+.userPopupBody{
+  max-width: 100%;
+  width: 350px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #111111;
+  box-shadow: 0px 0px 31px #0000003b;
+}
+.userPopupBody form{
+  display: flex;
+  flex-direction: column;
+}
+.userPopupBody form input{
+  height: 28px;
+  margin: 4px 0 12px 0;
+  padding: 0 5px;
+}
+.createUser{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close{
+  text-align: right;
+  cursor: pointer;
+  background-color: #111111;
+  color: white;
+  margin-left: auto;
+  width: fit-content;
+  padding: 2px;
+}
+.createUser::before{
+  content: '';
+  background-color: #0000004d;
+  width: 100%;
+  height: 100%;
+}
+
+.updateUser{
+  max-width: 100%;
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #111111;
+  box-shadow: 0px 0px 31px #0000003b;
+}
+.updateUser form{
+  display: flex;
+  flex-direction: column;
+}
+.updateUser form input{
+  height: 24px;
+  margin: 4px 0 12px 0;
+  padding: 0 5px;
+}
+fieldset{
+  display: inline-block;
+}
