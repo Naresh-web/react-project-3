@@ -6,6 +6,7 @@ import AddIcon from './assets/adduser.png'
 import TrashIcon from './assets/trash.png'
 
 const Home = () => {
+
     document.title = "React Project 3";
     const [users, setUsers] = useState([]);
     const [createUser, setCreateUser] = useState(false);
