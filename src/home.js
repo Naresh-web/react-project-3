@@ -124,7 +124,8 @@ const Home = () => {
                     </tr>
                 </thead>
                 <tbody>
-                {users.map((item) => (
+                {
+                    users.map((item) => (
                     <tr id={item.id}>
                         <td>{item.id}</td>
                         <td>{item.name}</td>
@@ -149,7 +150,8 @@ const Home = () => {
                             )}
                         </td>
                     </tr>
-                ))}
+                ))
+                }
                 </tbody>
             </table>
         </div>
