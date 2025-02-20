@@ -10,6 +10,17 @@ export const Api = async (URL) => {
 }
 /** Global API to fetch data End */
 
+export const fetchUserById = async (id) => {
+    try{
+        const resp = await fetch(`https://api.escuelajs.co/api/v1/users/${id}`)
+        const data = await resp.json()
+        return data;
+    }
+    catch (err){
+        console.log(err);
+    }
+}
+
 /** Api for create new user  */
 export const CreateNewUser = async (name, email, password, avatar) => {
     try {

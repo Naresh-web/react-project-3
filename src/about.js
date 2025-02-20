@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Api } from './api'
+import Layout from './Layout/layout';
 
 const About = () => {
     const [userData, setUserData] = useState([]);
@@ -16,7 +17,8 @@ const About = () => {
     }, [])
   return (
     <>
-        <table>
+    <Layout>
+    <table className='about'>
             <thead>
                 <tr>
                     <td>Id</td>
@@ -42,6 +44,8 @@ const About = () => {
             }
             </tbody>
         </table>
+    </Layout>
+
     </>
   )
 }
