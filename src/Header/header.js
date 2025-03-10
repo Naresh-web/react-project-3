@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
-  const cartItems = useSelector(store => store.cart.items)
+  const cartItems = useSelector(state => state.cart.items)
   console.log(cartItems)
   return <>
         <div className="header">
